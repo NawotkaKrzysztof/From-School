@@ -1,0 +1,135 @@
+<head>
+
+    <meta charset="utf-8">
+    
+</head>
+
+<style>
+    
+    #title
+    
+    {
+        font-size: 30px;
+        color: black;
+        text-align: center;
+        text-align: center;
+        font-weight: bold;
+    }
+    
+    #up_table
+    
+    {
+        color: orange;
+        font-size: 20px;
+        padding: 5px;
+        height:auto;
+        width:auto;
+        border:2px solid gray;
+    }
+    
+    #down_table
+    
+    {
+        color: mediumseagreen;
+        font-size: 20px;
+        padding: 5px;
+        height:auto;
+        width:auto;
+        border:2px solid gray;
+    }
+    
+    hr
+    
+    {
+        border-style: solid;
+        border-width: 2px;
+        margin-left: inherit;
+        margin-right: inherit;
+        color: red;
+    }
+
+    h2
+    
+    {
+        width:172px;
+        margin-top:-20px;
+        margin-left:5px;
+        background:white;
+        font-size: 23px;
+    }
+    
+    h3
+    
+    {
+        width:241px;
+        margin-top:-20px;
+        margin-left:5px;
+        background:white;
+        font-size: 23px;
+    }
+    
+    .split-para      
+    
+    { 
+        display:block; 
+    }
+
+    .split-para span 
+    
+    { 
+        display:block;
+        float:right;
+        width:50%;
+        margin-left:10px;
+    }
+    
+</style>
+
+<body>
+    
+    <div id="title">
+    
+        <p>Wypełnij formularz</p>
+        <hr>
+        
+    </div>
+    
+    <div id="up_table">
+    
+        <h3>Wypełnij obowiązkowo!</h3>
+        
+                Imię: <input type="text">
+        
+            <br>Nazwisko: <input type="text">
+        
+            <br>Płeć: 
+      
+                <input type="radio" name="mężczyzna" value="mężczyzna"> mężczyzna 
+                <input type="radio" name="kobieta" value="kobieta"> kobieta
+        
+            <br>Miejsce Zamieszkania: <input type="text">
+        
+            <br>Miasto: <input type="text">
+        
+    </div>
+    
+    <br>
+    
+    <div id="down_table">
+    
+        <h2>Opcjonalne dane</h2>
+        
+            Wykształcenie <select name="w">
+                <option value="1" selected>niepełne podstawowe</option>
+                <option value="2">podstawowe</option>
+                </select><br>
+        <p class="split-para">"Najczęściej odwiedzane portale:<span>Zainteresowania:<br><select name="z" disabled size="4"><option value="01"selected> muzyka</option><option value="02"> informatyka</option><option value="03"> matematyka</option><option value="04"> malarstwo</option><option value="05"> inne</option></select></span></p>
+                <input type="checkbox" name="01" value="onet"> Onet<br> 
+                <input type="checkbox" name="02" value="interia"> Interia<br>
+                <input type="checkbox" name="03" value="wp"> Wirtualna Poslka<br>
+                <input type="checkbox" name="04" value="gw"> Gazeta Wyborcza<br>
+        Uwagi:<br>
+        <textarea rows="6" cols="95"></textarea>
+    </div>
+    
+</body>
